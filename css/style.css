@@ -89,7 +89,7 @@ a:hover {
     margin-top: 3em;
     margin-bottom: 4em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2em;
     align-items: center;
   }
