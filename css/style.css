@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: orange;
+    background-image: url("./../img/bubble_bg.png");
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+/* Main Layout */
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a, a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.p_image {
+    max-width: 100%;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+.nav-links li {
+    color: green;
+}
+
+.text-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-me h2 {
+    margin-top: 0;
+    margin-bottom: 2em;
+}
+
+.small-logos {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-logos a {
+    padding: 1em;
+
+}
+
+.image-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-me img {
+    max-width: 99vw;
+    position: absolute;
+}
+
+.current-projects {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 2em;
+    align-items: center;
+  }
