@@ -61,7 +61,7 @@ a:hover {
 
 .nav-links {
     list-style: none;
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
     padding: 0;
 }
@@ -111,6 +111,7 @@ a:hover {
 
 .text-me .title {
     margin: 0;
+    font-size: 2.75rem;
 }
 
 .current-projects {
