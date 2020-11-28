@@ -228,11 +228,12 @@ a:hover {
     }
 
     .icon {
-        width: 30px;
+        width: 40px;
         margin: 0;
     }
- 
-    
+    .signature {
+        margin:0;
+    }
 }
 
 @media only screen and (min-width: 1100px){
@@ -289,7 +290,9 @@ a:hover {
         width: 40px;
         margin: 0;
     }
-
+    .signature {
+        margin:0;
+    }
 }
 
 
