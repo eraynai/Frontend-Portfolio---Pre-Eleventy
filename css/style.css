@@ -154,6 +154,10 @@ a:hover {
     filter: blur(1px);
   }
 
+  .hw1 {
+    max-width: 100%;
+}
+
   /* for touch screen devices */
 @media (hover: none) { 
     .project-title {
@@ -164,6 +168,3 @@ a:hover {
     }
   }
   
-.hw1 {
-    max-width: 100%;
-}
