@@ -158,7 +158,7 @@ a:hover {
     max-width: 100%;
 }
 
-  /* for touch screen devices 
+for touch screen devices 
 @media (hover: none) { 
     .project-title {
       opacity: 1;
@@ -167,4 +167,4 @@ a:hover {
       filter: blur(1px);
     }
   }
-  */
+
