@@ -15,7 +15,6 @@ body {
 .transition-fade {
     opacity: 1;
     transition: 500ms;
-    transform-origin: left;
 }
 
 html.is-animating .transition-fade {
@@ -155,7 +154,7 @@ a:hover {
     margin-top: 3em;
     margin-bottom: 4em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
     grid-gap: 2em;
     align-items: center;
   }
