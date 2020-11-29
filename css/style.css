@@ -66,9 +66,9 @@ a:hover {
     padding: 0;
 }
 
-.nav-links li {
+/*.nav-links li {
     color: green;
-}
+}*/
 
 .text-me {
     display: flex;
@@ -77,7 +77,12 @@ a:hover {
     text-align: center;
 }
 
-
+.text-me-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
 
 .small-logos {
     /*width: 400px;*/
@@ -97,8 +102,18 @@ a:hover {
     background-size: cover;
     position: absolute;
     width: var(--width);
-    height: calc(var(--width) * (2376/3072));
+    height: calc(var(--width) * (2365/3072));
     bottom: -100;  
+}
+
+.image-me-2 {
+    --width: 300px;
+    background-image: url(../img/elli_side_d.png);
+    background-size: cover;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * (3029/3073));
+    bottom: -100;
 }
 /* look at this in order to fix in mobile */
 /*.image-me img {
@@ -109,11 +124,14 @@ a:hover {
     z-index: -1;
 }*/
 
-.text-me .title {
+/*.text-me .title {
+    margin: 0;
+    font-size: 2.75rem;
+}*/
+.title {
     margin: 0;
     font-size: 2.75rem;
 }
-
 .current-projects {
     margin-top: 3em;
     margin-bottom: 4em;
@@ -148,8 +166,8 @@ a:hover {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity .5s;
-    background: rgba(90,0,10,0.4);
+    transition: opacity 0.4s;
+    background: rgba(189, 109, 5, 0.4);
     color: white;
      /* position the text in t’ middle*/
    display: flex;
@@ -177,6 +195,12 @@ a:hover {
     align-items: center;
 }
 
+.image-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 @media only screen and (min-width: 800px){
     header {
         flex-direction: row;
@@ -185,6 +209,15 @@ a:hover {
     
     .text-me {
         align-items: flex-start;
+        margin-top: 2em;
+    }
+
+    .text-me-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        text-align: left;
         margin-top: 2em;
     }
     .small-logos {
@@ -206,7 +239,7 @@ a:hover {
     }
 
     .image-me {
-        --width: 550px;
+        --width: 525px;
         background-image: url(../img/elli_4.png);
         background-size: cover;
         position: absolute;
@@ -215,12 +248,31 @@ a:hover {
         bottom: 0;   
     }
 
+    .image-me-2 {
+        --width: 400px;
+        background-image: url(../img/elli_side_2d.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (3072/3034));
+        bottom: 0;
+        right: 0;
+    }
+
+
+    .image-container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
     .logo {
         width: 130px;
     }
 
     .title {
-        font-size: 3.5rem;
+        font-size: 3rem;
     }
 
     .text-me .title {
@@ -234,6 +286,8 @@ a:hover {
     .signature {
         margin:0;
     }
+
+   
 }
 
 @media only screen and (min-width: 1100px){
@@ -274,17 +328,30 @@ a:hover {
         bottom: 0;   
     }
 
+
+    .image-me-2 {
+        --width: 500px;
+        background-image: url(../img/elli_side_2d.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (3072/3034));
+        bottom: 0;
+        right: 0;
+    }
+
+
+    .image-container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .logo {
         width: 150px;
     }
 
-    .title {
-        font-size: 5rem;
-    }
-
-    .text-me .title {
-        margin: 0;
-    }
+   
 
     .icon {
         width: 40px;
@@ -293,6 +360,16 @@ a:hover {
     .signature {
         margin:0;
     }
+
+   .title {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .description-about {
+        font-size: 1.5rem;
+    }
+
 }
 
 
