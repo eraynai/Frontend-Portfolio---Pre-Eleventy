@@ -154,7 +154,7 @@ a:hover {
     margin-top: 3em;
     margin-bottom: 4em;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(355px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     grid-gap: 2em;
     align-items: center;
   }
@@ -193,6 +193,7 @@ a:hover {
    justify-content: center;
   }
 
+  
   .project-listing:hover 
   .project-title {
     opacity: 1;
@@ -203,9 +204,9 @@ a:hover {
     filter: blur(1px);
   }
 
-  .hw1 {
-    max-width: 100%;
-}
+ .hw1 {
+    max-width: 60%; 
+ }
 
 .image-container {
     display: flex;
@@ -406,8 +407,35 @@ a:hover {
     .text-me-3 {
         align-items: flex-start;
         margin-top: 1em;
+        align-items: flex-start;
+        text-align: left;
     }
 
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .herbal-roles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 2em;
+        margin-top: 2rem;
+    }
+
+    .herbal-role {
+        text-align: center;
+    }
+
+    .herbal-role p {
+        font-size: 1.125rem;
+    }
+
+    .sketchIMG {
+        max-width: 100%;
+        justify-self: center;
+    }
 }
 
 

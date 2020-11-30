@@ -6,31 +6,63 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="swup/dist/swup.min.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Elli Raynai Frontend Portfolio - Hebral Warfare</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html"><img class="logo" src="img/final_logo.png" alt="Elli Raynai Logo"></a>
+            <a href="/index.html"><img class="logo" src="img/final_logo_2.png" alt="Elli Raynai Logo"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="play.html">Play</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/play.html">Play</a></li>
                 </ul>
             </nav>
         </header>
-        <section class="text-me">
-            <header class="project-description">
-                <h1>Herbal Warfare</h1>
-                <p>Herbal Warfare is a prototype of a VR casual game developed by Cream Productions. In May 2020 I was hired as an interaction designer to work on ideas for gameplay, user flow, interaction and overall visual design.</p>
-                <h2>Design Process Coming Soon...</h2>
-            </header>
-            <div class="product-image">
-                <img class="hw1" src="img/hw_1.png" alt="pic of herbalwarfare" />    
+        <main id="swup" class="transition-fade">
+            <div class="text-me-3">
+                <h1 class="title">Herbal Warfare</h1>
+                <p class="description-about">Herbal Warfare is a prototype of a VR casual game developed by Cream Productions. In May 2020 I was hired as a creative lead and interaction designer to work on ideas for gameplay, user flow, interaction and overall visual design.</p>
             </div>
-        </section>
+            <div class="image">
+                <img class="hw1" src="img/hw_1.png" alt="pic of herbalwarfare" />
+            </div>
+            <div class="herbal-roles">
+                <div class="herbal-role description-about">
+                    <h1>My Role</h1>
+                    <p>As a product designer, I worked in collaboration with a creative director, producer, developers and a graphic designer</p>
+                </div>
+                <div class="herbal-role description-about">
+                    <h1>Process</h1>
+                    <p>Research > Concept & Game</p> 
+                    <p>Design > Interaction & Level</p>
+                    <p>Design > Prototyping > User Testing</p>
+                </div>
+                <div class="herbal-role description-about">
+                    <h1>Goal</h1>
+                    <p>To create and deliver a functioning prototype of a mobile VR casual game</p>
+                </div>
+            </div>
+            <div class="text-me-3 description-about">
+                <h1>Challenge</h1>
+                <p>Our team was tasked to design a game with great replay value and a hook like Angry Birds. Casual mobile games like Angry Birds, where the main interaction is tapping on a screen, are extremely simple to pick up and play. </p>
+                <p>Our biggest challenge was creating the same<strong> simplicity in VR</strong> because you have to think and design spatially.
+                </p>
+            </div>
+            <div class="text-me-3 description-about">
+                <h1>Solution</h1>
+                <p>We designed our product by brainstorming gameplay that is highly engaging, satisfying and simplistic. We had to be deliberate of our choices and work within the constrains of the medium, bearing in mind the visual language as well as ergonomics.</p>
+            </div>
+            <div class="herbal-roles">
+                    <img src="img/sketch_1.png" alt="sketch 1" class="sketchIMG" />
+                    <img src="img/sketch_2.png" alt="sketch 2" class="sketchIMG"/>
+                    <img src="img/sketch_3.png" alt="sketch 3"class="sketchIMG" />
+            </div>
+        </main>
     </div>
 </body>
 </html>
