@@ -103,7 +103,6 @@ a:hover {
 }
 
 .small-logos {
-    /*width: 400px;*/
     display: flex;
     justify-content: center;
 
@@ -358,6 +357,8 @@ a:hover {
     .description-about {
         font-size: 1rem;
     }
+
+
     .image {
         display: flex;
         justify-content: center;
@@ -486,7 +487,7 @@ a:hover {
     }
 
     .herbal-role p {
-        font-size: 1.125rem;
+        font-size: 1.5rem;
     }
 
     /*.sketchIMG {

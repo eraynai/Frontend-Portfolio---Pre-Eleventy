@@ -6,27 +6,70 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <script defer src="swup/dist/swup.min.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Elli Raynai Frontend Portfolio - Made This Way</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <a href="index.html"><img class="logo" src="img/final_logo.png" alt="Elli Raynai Logo"></a>
+            <a href="/index.html"><img class="logo" src="img/final_logo_2.png" alt="Elli Raynai Logo"></a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="play.html">Play</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/projects.html">Projects</a></li>
+                    <li><a href="/play.html">Play</a></li>
                 </ul>
             </nav>
         </header>
-        <div class="text-me">
-            <h1>Made This Way</h1>
-            <p><strong><a href="http://cfccreates.com/productions/458-made-this-way-redefining-masculinity">Made This Way: Redefining Masculinity</a></strong> is an interactive mixed-media documentary that I co-wrote, co-directed and co-produced with the CFC Media Lab. This is a VR project that has received great praise both nationally and internationally. As it is a content driven piece, we wanted to make sure the audience wasn’t lost trying to navigate the virtual experience.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/alREtscSZDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        <h2>Design Process Coming Soon...</h2>
+        <main id="swup" class="transition-fade"></main>
+            <div class="text-me-3">
+                <h1 class="title">Made This Way</h1>
+                <p class="description-about"><strong><a href="http://cfccreates.com/productions/458-made-this-way-redefining-masculinity">Made This Way: Redefining Masculinity</a></strong> is an interactive mixed-media documentary that I co-wrote, co-directed and co-produced with the CFC Media Lab. This is a VR project that has received great praise both nationally and internationally. As it is a content driven piece, we wanted to make sure the audience wasn’t lost trying to navigate the virtual experience.</p>
+            </div>
+            <div class="image">
+                <img class="hw1" src="img/mtw_hero_3.jpg" alt="pic of made this way" />
+            </div>
+            <div class="herbal-roles">
+                <div class="herbal-role description-about">
+                    <h1>My Role</h1>
+                    <p>Co-Creator, Interaction Designer</p>
+                </div>
+                <div class="herbal-role description-about">
+                    <h1>Process</h1>
+                    <p>Design > Interaction & Level</p>
+                    <p>Usability Testing > Redesign</p>
+                    <p>Rebrand > Delivery</p>
+                </div>
+                <div class="herbal-role description-about">
+                    <h1>Goal</h1>
+                    <p>The goal was to turn the navigation into a more intuitive experience in VR in order to enhance audience’s immersion into the story.</p>
+                </div>
+            </div>
+            <div class="text-me-3 description-about">
+                <h1>Challenge</h1>
+                <p>This VR experience was produced in three months with a very small budget. There was no opportunity to do any usability testing in order to create a seamless user experience. Considering the low VR literacy among general audiences and the lack of experience design in VR, a usability testing is crucial for independent creators to understand how to present their stories and get their message across in this interactive medium.</p>
+            </div>
+            <div class="herbal-roles">
+                <img src="img/mtw_painting.png" alt="painting of made this way" class="sketchIMG" />
+                <img src="img/mtw-gif.gif" alt="gif of made this way" class="sketchIMG"/>
+                <img src="img/mtw_devyn.png" alt="image of Devyn in made this way" class="sketchIMG" />
+            </div>
+            <div class="text-me-3 description-about">
+                <h1>Research</h1>
+                <p>During the national and international premiere of Made This Way: Redefining Masculinity, we had a chance to do one-to-one informal interviews with the audience and record their feedback about the experience. Their feedback was somehow mixed, some people had difficulties with navigation so much that they missed some of the content meanwhile some were completely at ease with the navigation.</p>
+            </div>
+            <div class="herbal-roles">
+                <img src="img/venice_1.jpg" alt="made this way venice" class="sketchIMG" />
+                <img src="img/venice_2.jpg" alt="made this way venice" class="sketchIMG"/>
+                <img src="img/hotdocs_2.jpg" alt="made this way hot docs" class="sketchIMG" />
+            </div>
+            <div class="text-me-3 description-about">
+                <p>While the piece was traveling international festivals, we started pre-production for its second phase where we would add more subjects. That’s when we decided to conduct usability testing to evaluate the existing design of the VR space and interface. We set up sessions with 6 people aged 20-45, from various technical and cultural backgrounds. We recorded the tests audio-visually, took notes of the common errors on observation sheets and at the end of the test, each participant answered a short survey.</p>
+            </div>
+            <!-- iframe width="560" height="315" src="https://www.youtube.com/embed/alREtscSZDc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </main>
     </div>
 </body>
 </html>
