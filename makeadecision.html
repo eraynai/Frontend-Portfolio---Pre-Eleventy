@@ -1,43 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="swup/dist/swup.min.js"></script>
+    <script defer src="js/script.js"></script>
     <title>Elli Raynai Frontend Portfolio - How To Make A Decision</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <a href="index.html"><img class="logo" src="img/final_logo_2.png" alt="Elli Raynai Logo"></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="/play.html">Play</a></li>-->
-                </ul>
-            </nav>
-        </header>
-        <div class="text-me">
-            <h1>How To Make A Decision</h1>
-            <p>How To Make A Decision is an interactive e-learning project.</p>
+      <header>
+        <a href="index.html"
+          ><img class="logo" src="img/final_logo_2.png" alt="Elli Raynai Logo"
+        /></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <!--<li><a href="/play.html">Play</a></li>-->
+          </ul>
+        </nav>
+      </header>
+      <main id="swup" class="transition-fade">
+        <div class="text-me-3">
+            <h1 class="title">How To Make A Decision</h1>
+            <div class="description-about">
+            <p>
+              How To Make A Decision was a project that I completed for an interactive video class that I took in the fall of 2020.  The goal of the assignment was to create an interactive e-learning tutorial which was highly engaging for the user.</p>  
+          </div>
         </div>
-        <div style="position: relative; padding-bottom: 56.25%; height: 0; max-width: 100%;">
-            <iframe 
-                src="https://video.eko.com/v/MYjeOr/embed" 
-                title="How To Make A Decision"
-                style="width: 100%; height: 100%; border: 0; position: absolute; left:0; right:0;" 
-                allowfullscreen 
-                allow="autoplay; fullscreen">
-            </iframe>
+        <div
+          style="
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            max-width: 100%;
+          "
+        >
+          <iframe
+            src="https://video.eko.com/v/MYjeOr/embed"
+            title="How To Make A Decision"
+            style="
+              width: 100%;
+              height: 100%;
+              border: 0;
+              position: absolute;
+              left: 0;
+              right: 0;
+            "
+            allowfullscreen
+            allow="autoplay; fullscreen"
+          >
+          </iframe>
         </div>
-        <div class="text-me">
-            <h2>Design Processing Coming Soon...</h2>
+        <div class="herbal-roles">
+            <div class="herbal-role description-about">
+                <h1>My Role</h1>
+                <p>As this was a solo project, I worked on all aspects of the production including scripting, storyboarding, shooting, editing, and delivery.</p>
+            </div>
+            <div class="herbal-role description-about">
+                <h1>Process</h1>
+                <p>Research > Concept & Approach</p> 
+                <p>Design > Script & Storyboard</p>
+                <p>Design > Production & Interaction Design</p>
+                <p>Delivery > Polish & Publish</p>
+            </div>
+            <div class="herbal-role description-about">
+                <h1>Goal</h1>
+                <p>To create and deliver a polished interactive e-learning experience</p>
+            </div>
         </div>
-        
+        <div class="text-me-3 description-about">
+            <h1>Challenge</h1>
+            <p>Due to the fact that this class took place during the height of the pandemic, I had to be be very creative with my execution as I was limited with my options for filming the project.</p>
+        </div>
+        <div class="text-me-3 description-about">
+            <h1>Solution</h1>
+            <p>I decided to use motion capture through a VR app called Flipside Studio.  This creative thinking allowed me the opportunity to generate a video of high production value using minimal resources under very tight budget and time constraints.</p>
+        </div>
+        <div class="text-me-3 description-about">
+            <h1>Research</h1>
+            <p>I looked at different e-learning experiences and tried to differentiate the aspects that made them special from the competition.  What I discovered was because of the saturation in the market, teachers needed to find a way to differentiate their content from other e-learning creators. As a result, I tried to utilize a sense of humor in my experience so that people would naturally want to keep engaging with it.</p>
+        </div>
+        <div class="text-me-3 description-about">
+            <h1>User Flow</h1>
+            <p>I created a user flow of how the user could engage with the content and because the narrative was branching, at which points the user would have agency to change the experience.</p>
+        </div>
+        <div class="image">
+            <img class="hw1" src="img/howto_userflow.png" alt="storyboard of how to make a decision" />
+        </div>
+        <div class="text-me-3 description-about">
+            <h1>Conclusion</h1>
+            <p>Over the course of this project I applied many problem solving skills to create an e-learning that was of high production value.  I wanted to create something that people don't typically see in the e-learning space and based on the small sample of feedback that I received, it was a very successful and effective approach.</p>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
