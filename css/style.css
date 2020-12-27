@@ -5,8 +5,9 @@
 }
 
 body {
-    background-color: orange;
-    background-image: url("./../img/bubble_bg.png");
+    /*background-color: orange;*/
+    background-image: url("./../img/painting_bg_9.jpg");
+    background-repeat: repeat-y;
     font-family: 'Inter', sans-serif;
     margin: 0;
     color: #251F40;
