@@ -186,7 +186,7 @@ a:hover {
     left: 0;
     opacity: 0;
     transition: opacity 0.4s;
-    background: rgba(189, 109, 5, 0.4);
+    background: rgba(253, 173, 253, 0.4);
     color: white;
      /* position the text in t’ middle*/
    display: flex;
