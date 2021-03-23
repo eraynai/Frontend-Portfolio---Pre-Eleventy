@@ -1,0 +1,515 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    /*background-color: orange;*/
+    background-image: url("./../img/painting_bg_9.jpg");
+    background-repeat: repeat-y;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    color: #251F40;
+}
+
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+
+}
+
+
+/* Typography
+
+h1 {
+    font-size: 2.5rem !important;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.75rem;
+}
+ */
+/* Main Layout */
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a, a:link {
+    color: #251F40;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}
+
+.p_image {
+    max-width: 100%;
+}
+
+
+
+.logo {
+    width: 100px;
+    margin-top: 2rem;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0;
+}
+
+/*.nav-links li {
+    color: green;
+}*/
+
+.text-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.text-me-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+.text-me-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:center;
+}
+
+.small-logos {
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-logos a {
+    padding: 1em;
+
+}
+
+.image-me {
+    --width: 400px;
+    background-image: url(../img/elli_4.png);
+    background-size: cover;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * (2365/3072));
+    bottom: -100;  
+}
+
+.image-me-2 {
+    --width: 300px;
+    background-image: url(../img/elli_side_d.png);
+    background-size: cover;
+    position: absolute;
+    width: var(--width);
+    height: calc(var(--width) * (3029/3073));
+    bottom: -100;
+}
+/* look at this in order to fix in mobile */
+/*.image-me img {
+    max-width: 100vw;
+    position: absolute;
+    bottom: -200px;
+    width: 70%;
+    z-index: -1;
+}*/
+
+/*.text-me .title {
+    margin: 0;
+    font-size: 2.75rem;
+}*/
+.title {
+    margin: 0;
+    font-size: 2.75rem;
+}
+.current-projects {
+    margin-top: 3em;
+    margin-bottom: 4em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 2em;
+    align-items: center;
+  }
+
+.project-listing {
+    position: relative;
+}
+
+.project-image {
+    line-height: 0;
+    
+}
+.project-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+    /*transform: scale(1.1);*/
+  }
+  
+  .project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.4s;
+    background: rgba(253, 173, 253, 0.4);
+    color: white;
+     /* position the text in t’ middle*/
+   display: flex;
+   align-items: center;
+   justify-content: center;
+  }
+
+  
+  .project-listing:hover 
+  .project-title {
+    opacity: 1;
+  }
+
+  .project-listing:hover 
+  .project-image img {
+    filter: blur(1px);
+  }
+
+ .hw1 {
+    max-width: 100%; 
+ }
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.herbal-roles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 2em;
+    margin-top: 2rem;
+}
+
+ /*.herbal-roles-2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px 1fr));
+        grid-gap: 2em;
+        margin-top: 2rem;
+    }
+
+    .herbal-roles-3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+        margin-top: 2rem;
+    }*/
+
+.herbal-role {
+    text-align: center;
+}
+
+.herbal-role p {
+    font-size: 1.125rem;
+}
+
+.sketchIMG {
+    max-width: 100%;
+    justify-self: center;
+}
+
+@media only screen and (min-width: 800px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .text-me {
+        align-items: flex-start;
+        margin-top: 2em;
+    }
+
+    .text-me-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        text-align: left;
+        margin-top: 2em;
+    }
+
+    .text-me-3 {
+        align-items: flex-start;
+        margin-top: 1em;
+
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .small-logos {
+        align-self: flex-start;
+    }
+
+    .small-logos a {
+        margin-right: 4em;
+        padding: 0;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+
+    .nav-links li {
+        padding-left: 1em;
+        font-size: 1.5rem;
+    }
+
+    .image-me {
+        --width: 525px;
+        background-image: url(../img/elli_4.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (2376/3072));
+        bottom: 0;   
+    }
+
+    .image-me-2 {
+        --width: 400px;
+        background-image: url(../img/elli_side_2d.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (3072/3034));
+        bottom: 0;
+        right: 0;
+    }
+
+
+    .image-container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    .logo {
+        width: 130px;
+    }
+
+    .title {
+        font-size: 3rem;
+    }
+
+    .text-me .title {
+        margin: 0;
+    }
+
+    .icon {
+        width: 40px;
+        margin: 0;
+    }
+    .signature {
+        margin:0;
+    }
+    .description-about {
+        font-size: 1rem;
+    }
+
+
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .herbal-role {
+        text-align: center;
+    }
+
+    .herbal-role p {
+        font-size: 1rem;
+    }
+
+    .sketchIMG {
+        max-width: 100%;
+        justify-self: center;
+    }
+   
+}
+
+@media only screen and (min-width: 1100px){
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .text-me {
+        align-items: flex-start;
+        margin-top: 1em;
+    }
+    .small-logos {
+        align-self: flex-start;
+    }
+
+    .small-logos a {
+        margin-right: 4em;
+        padding: 0;
+    }
+
+    .nav-links{
+        display: flex;
+    }
+
+    .nav-links li {
+        padding-left: 1em;
+        font-size: 2rem;
+    }
+
+    .image-me {
+        --width: 700px;
+        background-image: url(../img/elli_4.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (2376/3072));
+        bottom: 0;   
+    }
+
+
+    .image-me-2 {
+        --width: 500px;
+        background-image: url(../img/elli_side_2d.png);
+        background-size: cover;
+        position: absolute;
+        width: var(--width);
+        height: calc(var(--width) * (3072/3034));
+        bottom: 0;
+        right: 0;
+    }
+
+
+    .image-container-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+   
+
+    .icon {
+        width: 40px;
+        margin: 0;
+    }
+    .signature {
+        margin:0;
+    }
+
+   .title {
+        margin: 0;
+        font-size: 4rem;
+    }
+
+    .description-about {
+        font-size: 1.5rem;
+    }
+
+    .text-me-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 60%;
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    .text-me-3 {
+        align-items: flex-start;
+        margin-top: 1em;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    .herbal-role {
+        text-align: center;
+    }
+
+    .herbal-role p {
+        font-size: 1.5rem;
+    }
+
+    /*.sketchIMG {
+        max-width: 100%;
+        justify-self: center;
+    }*/
+
+}
+
+
+
+/*for touch screen devices 
+@media (hover: none) { 
+    .project-title {
+      opacity: 1;
+    }
+    .project-image img {
+      filter: blur(1px);
+    }
+  }
+
+
+*/
