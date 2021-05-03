@@ -7,8 +7,9 @@
 
 body {
   /*background-color: orange;*/
-  background-image: url("./../img/painting_bg_9.jpg");
-  background-repeat: repeat-y;
+  /* background-image: url("./../img/painting_bg_9.jpg");
+  background-repeat: repeat-y; */
+  background-color: #ca895f;
   font-family: "Inter", sans-serif;
   margin: 0;
   color: #251f40;
