@@ -1,98 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" 
-    type="image/png" 
-    href="img/er_favicon_2.png" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/er_favicon_2.png" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="swup/dist/swup.min.js"></script>
     <script defer src="js/script.js"></script>
     <title>Elli Raynai Portfolio - Nourish</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <header>
-            <a href="/index.html"><img class="logo" src="img/final_logo_3.png" alt="Elli Raynai Logo"></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <!--<li><a href="/play.html">Play</a></li>-->
-                </ul>
-            </nav>
-        </header>
-        <main id="swup" class="transition-fade">
-            <div class="text-me-3">
-                <h1 class="title">Nourish</h1>
-                <div class="description-about">
-                <p>Nourish is a motivational augmented reality experience built for the Snapchat mobile platform. The project was made over a 4 week period starting in October 2020 when our team was accepted into the AR residency.  The purpose of the project was to create a lens that would help people to initiate or  maintain healthy habits.</p>
-                <p>The way that the lens works is the user is able to scan three separate objects in their environment - <strong>pillow, bowl, and running</strong>.  Once the camera recognizes them, the characters appear and form a motivational word and then dance before disappearing.  The words we chose were "Rise", "Run", and "Sense".</p>
-                </div>
-            </div>
-            <div class="herbal-roles">
-                <img src="img/bridgeallcharacters.gif" alt="gif of nourish" class="sketchIMG" />
-                <img src="img/focus.gif" alt="another gif of nourish" class="sketchIMG"/>
-                <img src="img/build.gif" alt="another gif of nourish" class="sketchIMG" />
-            </div>
-            <div class="herbal-roles">
-                <div class="herbal-role description-about">
-                    <h1>My Role</h1>
-                    <p>As the creative lead and one of the designers, I worked in collaboration with another designer to create assets, train the machine learning model, and program interactions in the Snapchat lens.</p>
-                </div>
-                <div class="herbal-role description-about">
-                    <h1>Process</h1>
-                    <p>Research > Concept & Approach</p> 
-                    <p>Design > Assets & Interactions</p>
-                    <p>Design > Prototyping > User Testing</p>
-                    <p>Delivery > Polish & Publish</p>
-                </div>
-                <div class="herbal-role description-about">
-                    <h1>Goal</h1>
-                    <p>To create and deliver a polished interactive AR experience</p>
-                </div>
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Challenge</h1>
-                <p>The project faced numerous challenges throughout the design and production process including time, resources, and a limited knowledge of how to use the required software to assemble and create interactions within the experience. In addition, as neither of us on the team were character animators we had to find a technical solution of how we were going make the custom movements that we wanted the Nourish characters to make.
-                </p>
-                <p>An additional constraint that we faced was the final size of the lens could be no larger than four mega bytes. As a result, we had to limit how many 3D characters we were going to create</p>
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Solution</h1>
-                <p>We worked with a company named <a href="https://www.flipsidexr.com/Flipside XR">Flipside XR</a> who created a product called Flipside Studio.  What Flipside Studio allows you to do is bring a a 3D model inside VR and when you put on the headset you can embody that character and capture their movements.  We then used their tool to bring that motion capture inside of a 3D software and export it into Snap Lens Studio, the required software we had to use to build the lens.</p>
-            </div>
-            <div class="image">
-                <img class="hw1" src="img/blenderbts.gif" alt="blender behind the scenes" />
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Sketches</h1>
-                <p>Given our file size constraint of the final experience, we decided we had to make words out of the title "Nourish". We did this be sketching out the characters and then brainstorming what words could be derived from them.</p>
-            </div>
-            <div class="image">
-                <img class="hw1" src="img/nourishstorm.jpg" alt="brainstorm of characters" />
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Research</h1>
-                <p>We thought of different ways to motivate people, but the lens didn't really take shape until we landed on this idea that these characters are always with you and you just need to scan specific items that exist in your personal space to bring them out.</p>
-                <p>In order for the lens to know your environment we needed to use machine model so the lens could identify specific items that we chose for the design.</p>
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Wireframes & User Flow</h1>
-                <p>We created various wireframes so that we could visualize the flow of the lens as we wanted the experience to be as intuitive as possible as we knew that we only had a few seconds to capture the user's attention.</p>
-            </div>
-            <div class="image">
-                <img class="hw1" src="img/user_frames.png" alt="wireframes of nourish" />
-            </div>
-            <div class="text-me-3 description-about">
-                <h1>Conclusion</h1>
-                <p>Over the course of this project I applied many problem solving skills to create the design and user experience of the lens.  We aimed to create something that move beyond face filters, which is typically how most mobile users use Snapchat. We wanted to create a meaningful experience that could help people during times when they aren't feeling motivated to maintain a healthy lifestyle and make them feel they are never alone on this journey.</p>
-            </div>
-            <!--  <div class="text-me">
+      <header>
+        <a href="/index.html"
+          ><img class="logo" src="img/final_logo_3.png" alt="Elli Raynai Logo"
+        /></a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <!--<li><a href="/play.html">Play</a></li>-->
+          </ul>
+        </nav>
+      </header>
+      <main id="swup" class="transition-fade">
+        <div class="text-me-3">
+          <h1 class="title">Nourish</h1>
+          <div class="description-about">
+            <p>
+              Nourish is a motivational AR experience built for the Snapchat
+              mobile platform. The project was made over a 4 week period
+              starting in October 2020 when our team was accepted into the AR
+              residency. The purpose of the project was to create a lens that
+              would help people to initiate or maintain healthy habits.
+            </p>
+
+            <p>
+              At the end of this residency I became an
+              <strong>Official Lens Creator with Snap</strong>.
+            </p>
+          </div>
+        </div>
+        <img
+          class="splash-page"
+          src="img/nourish_splash-page.png"
+          alt="promotional image of nourish lens"
+        />
+        <div class="herbal-roles">
+          <div class="herbal-role description-about">
+            <h1>My Role</h1>
+            <p>
+              As the creative lead and one of the designers, I worked in
+              collaboration with another designer to create assets, train the
+              machine learning model, and program interactions in the Snapchat
+              lens.
+            </p>
+          </div>
+          <div class="herbal-role description-about">
+            <h1>Process</h1>
+            <p>Research > Concept & Approach</p>
+            <p>Design > Assets & Interactions</p>
+            <p>Design > Prototyping > User Testing</p>
+            <p>Delivery > Polish & Publish</p>
+          </div>
+          <div class="herbal-role description-about">
+            <h1>Goal</h1>
+            <p>To create and deliver a polished interactive AR experience</p>
+          </div>
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Challenge</h1>
+          <p>
+            During the pandemic lockdowns we were all feeling isolated,
+            unmotivated and lonely. We wanted to offer an AR experience that can
+            be motivational and uplifting during these hard times.
+          </p>
+          <p>
+            The project faced numerous challenges throughout the design &
+            production process including time, resources, and a limited
+            knowledge of how to use the required software to assemble and create
+            interactions within the experience. In addition, as neither of us on
+            the team were character animators. We had to find a technical
+            solution of how we were going make the custom movements that we
+            wanted the Nourish characters to make.
+          </p>
+          <p>
+            An additional constraint that we faced was the final size of the
+            lens could be no larger than 4MB. As a result, we had to limit how
+            many 3D characters we were going to create.
+          </p>
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Solution</h1>
+          <div class="responsive-iframe text-me-3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/nlV34HeojpI"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p>
+            <strong>Nourish</strong> is a motivational lens that encourages you
+            to stay healthy both mentally and physically.
+          </p>
+
+          <p>
+            The way that the lens works is the user is able to scan three
+            separate objects in their environment -
+            <strong>pillow, bowl, and running shoes</strong>. Once the camera
+            recognizes them, the characters appear and form a motivational word
+            and then dance before disappearing. The words we chose were "Rise",
+            "Run", and "Sense".
+          </p>
+        </div>
+        <div class="image">
+          <img
+            class="hw1"
+            src="img/blenderbts.gif"
+            alt="blender behind the scenes"
+          />
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Process</h1>
+          <p>
+            We thought of different ways to motivate people, but the lens didn't
+            really take shape until we landed on this idea that these characters
+            are always with you and you just need to scan specific items that
+            exist in your personal space to bring them out.
+          </p>
+
+          <p>
+            In order for the lens to know your environment we needed to use ML
+            model so the lens could identify specific items that we chose for
+            the design.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            class="hw1"
+            src="img/nourishstorm.jpg"
+            alt="brainstorm of characters"
+          />
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Research</h1>
+          <p>
+            We thought of different ways to motivate people, but the lens didn't
+            really take shape until we landed on this idea that these characters
+            are always with you and you just need to scan specific items that
+            exist in your personal space to bring them out.
+          </p>
+          <p>
+            In order for the lens to know your environment we needed to use
+            machine model so the lens could identify specific items that we
+            chose for the design.
+          </p>
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Wireframes & User Flow</h1>
+          <p>
+            We created various wireframes so that we could visualize the flow of
+            the lens as we wanted the experience to be as intuitive as possible
+            as we knew that we only had a few seconds to capture the user's
+            attention.
+          </p>
+        </div>
+        <div class="image">
+          <img
+            class="hw1"
+            src="img/user_frames.png"
+            alt="wireframes of nourish"
+          />
+        </div>
+        <div class="text-me-3 description-about">
+          <h1>Conclusion</h1>
+          <p>
+            Over the course of this project I applied many problem solving
+            skills to create the design and user experience of the lens. We
+            aimed to create something that move beyond face filters, which is
+            typically how most mobile users use Snapchat. We wanted to create a
+            meaningful experience that could help people during times when they
+            aren't feeling motivated to maintain a healthy lifestyle and make
+            them feel they are never alone on this journey.
+          </p>
+        </div>
+        <!--  <div class="text-me">
                 <h1>Nourish</h1>
                 
                 <p>You think you're alone, <strong>BUT YOU'RE NOT. </strong>You think you're not motivated, <strong>BUT YOU CAN BE. </strong></p>
@@ -103,7 +205,7 @@
                 <p><strong>Coming Soon...</strong></p>
             </div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/XkpF0hV3lrE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        </main>
+      </main>
     </div>
-</body>
+  </body>
 </html>

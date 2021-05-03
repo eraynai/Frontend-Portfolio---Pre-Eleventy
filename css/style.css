@@ -11,7 +11,7 @@ body {
   background-repeat: repeat-y;
   font-family: "Inter", sans-serif;
   margin: 0;
-  color: #251F40;
+  color: #251f40;
 }
 
 .transition-fade {
@@ -49,16 +49,18 @@ header {
   align-items: center;
 }
 
-a, a:link {
-  color: #251F40;
+a,
+a:link {
+  color: #251f40;
   text-decoration: none;
 }
 
 a:hover {
-  color: green;
+  color: palegoldenrod;
 }
 
-.p_image {
+.p_image,
+.splash-page {
   max-width: 100%;
 }
 
@@ -113,7 +115,7 @@ a:hover {
   background-size: cover;
   position: absolute;
   width: var(--width);
-  height: calc(var(--width) * (2365/3072));
+  height: calc(var(--width) * (2365 / 3072));
   bottom: -100;
 }
 
@@ -123,7 +125,7 @@ a:hover {
   background-size: cover;
   position: absolute;
   width: var(--width);
-  height: calc(var(--width) * (3029/3073));
+  height: calc(var(--width) * (3029 / 3073));
   bottom: -100;
 }
 
@@ -250,6 +252,22 @@ a:hover {
   max-width: 100%;
   justify-self: center;
 }
+.responsive-iframe {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flex-iframe {
+  height: 100px;
+}
 
 @media only screen and (min-width: 800px) {
   header {
@@ -302,7 +320,7 @@ a:hover {
     background-size: cover;
     position: absolute;
     width: var(--width);
-    height: calc(var(--width) * (2376/3072));
+    height: calc(var(--width) * (2376 / 3072));
     bottom: 0;
   }
 
@@ -312,7 +330,7 @@ a:hover {
     background-size: cover;
     position: absolute;
     width: var(--width);
-    height: calc(var(--width) * (3072/3034));
+    height: calc(var(--width) * (3072 / 3034));
     bottom: 0;
     right: 0;
   }
@@ -402,7 +420,7 @@ a:hover {
     background-size: cover;
     position: absolute;
     width: var(--width);
-    height: calc(var(--width) * (2376/3072));
+    height: calc(var(--width) * (2376 / 3072));
     bottom: 0;
   }
 
@@ -412,7 +430,7 @@ a:hover {
     background-size: cover;
     position: absolute;
     width: var(--width);
-    height: calc(var(--width) * (3072/3034));
+    height: calc(var(--width) * (3072 / 3034));
     bottom: 0;
     right: 0;
   }
